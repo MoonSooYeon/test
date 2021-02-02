@@ -1,0 +1,128 @@
+/*-------------------------------------------------------------------
+    파일정의 : 레이아웃
+    속성순서 : 레이아웃, 사이징, 박스모양, 글자모양, 문단모양, 기타모양
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+    @공통
+-------------------------------------------------------------------*/
+/* skip */
+#skip-nav {height:0}
+#skip-nav a {display: block; position: absolute; left: 0; top: -100px; width: 100%; height: 1px; text-align: center}
+#skip-nav a:focus, #skip a:active {position: absolute; top: 0; z-index: 120; height: 25px; padding: 10px 0; font-size: 1.4em; font-weight: 700; color: #36348f; background: #fff;}
+
+/* container */
+.container{ max-width: 1280px; width: 100%; padding-left: 40px; padding-right: 40px; margin-left: auto; margin-right: auto; position: relative; }
+.container::after{ display: block; clear: both; content: ""; }
+
+/* 컨텐츠 영역 */
+.tit-wrap{ display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.tit-wrap .tit{ font-weight: 700; position: relative; font-family: 'NanumSquare';  }
+.tit-wrap .tit .deco{ position: absolute; left: 0; }
+
+.tit-wrap.v1{ border-bottom: 1px solid #eeeeee; padding-bottom: 12px; }
+.tit-wrap.v1 .tit{ font-size: 26px; padding-left: 32px; }
+.tit-wrap.v1 .tit .deco{ top: 10px; }
+
+.tit-wrap.v2{ border-bottom: 1px solid #333333; padding-bottom: 15px; }
+.tit-wrap.v2 .tit{ font-size: 20px; padding-left: 32px; }
+.tit-wrap.v2 .tit .deco{ top: 7px; }
+.tit-wrap.v2 .tit .cnt{ display: inline-block; width: 22px; line-height: 22px; height: 22px; border-radius: 50%; background: #f3cac1; color: #ffffff; font-size: 13px; font-weight: 700; text-align: center; margin-left: 8px; vertical-align: 1px; }
+.tit-wrap.v2 .btn-more{ font-size: 16px; }
+
+/* header */
+#header #utilBar{ background: #757575; display: flex; justify-content: space-between; }
+#header #utilBar .util-nav{ float: left; }
+#header #utilBar .util-nav li{ float: left; }
+#header #utilBar .util-nav li a{ display: block; height: 40px; line-height: 40px; color: #ffffff; padding: 0 12px; font-size: 13px; font-weight: 700; }
+#header #utilBar .util-nav li a.home{ padding-left: 22px; background: url('../img/common/ico_home_off.png') no-repeat 8px center; }
+#header #utilBar .util-nav li.on a{ background: #ffffff url('../img/common/ico_home_on.png') no-repeat 8px center; color: #222222; }
+#header #utilBar .user{ float: right; }
+#header #utilBar .user::after{ display: block; clear: both; content: ""; }
+#header #utilBar .user > *{ float: left; }
+#header #utilBar .user p{ font-size: 14px; color: #ffffff; line-height: 40px; margin-right: 20px; }
+#header #utilBar .user .btn{ min-width: 66px; padding: 0 10px; margin: 10px 0 }
+
+#header .gnb-wrap .btn-menu,
+#header .gnb-wrap .container > .btn-search,
+#header .gnb-wrap #gnb .gnb-head,
+#header .gnb-wrap #gnb .user-menu{ display: none; }
+#header .gnb-wrap .btn-menu{ width: 34px; height: 31px; background: url('../img/common/btn_ico_menu.png') no-repeat center; background-size: 100%; position: absolute; top: 50%; transform: translateY(-50%); }
+#header .gnb-wrap .logo{ float: left; padding: 12px 0 11px; margin-right: 88px; width: 161px; height: 86px; }
+#header .gnb-wrap .logo a{ text-indent: -9999px; display: block; width: 100%; height: 100%; background: url('../img/common/logo.png') no-repeat center; background-size: 100%; }
+#header .gnb-wrap .container > .btn-search{ position: absolute; right: 40px; top: 50%; transform: translateY(-50%); }
+#header .gnb-wrap .total-search{ float: left; position: relative; width: 294px; padding: 22px 0 23px; }
+#header .gnb-wrap .total-search input{ width: 100%; border: 0; height: 41px; border-bottom: 1px solid #cccccc; font-size: 16px; padding-right: 24px; }
+#header .gnb-wrap .total-search .btn-ic{ position: absolute; right: 1px; top: 33px; }
+#header .gnb-wrap #gnb{ float: right; }
+#header .gnb-wrap #gnb > ul::after{ display: block; clear: both; content: ""; }
+#header .gnb-wrap #gnb > ul > li{ float: left; position: relative; overflow: visible; }
+#header .gnb-wrap #gnb > ul > li > a{ display: block; height: 86px; line-height: 86px; display: block; padding: 0 25px; font-size: 18px; color: #353535; }
+#header .gnb-wrap #gnb > ul > li:hover .depth01{ display: block; }
+#header .gnb-wrap #gnb .depth01{ position: absolute; z-index: 1; width: 100%; background: #ffffff; border-bottom: 1px solid #dddddd; display: none; }
+#header .gnb-wrap #gnb .depth01 li{ border-top: 1px solid #dddddd; }
+#header .gnb-wrap #gnb .depth01 li a{ text-align: center; display: block; line-height: 50px; color: #666666; font-size: 15px; }
+#header .gnb-wrap #gnb .depth01 li a:hover{ background: #f3f8fe; color: #0a5290; }
+
+#footer .footer-link{ padding: 9px 0 10px; border-top: 1px solid #dadada; }
+#footer .footer-link ul::after{ display: block; clear: both; content: ""; }
+#footer .footer-link ul li{ float: left; }
+#footer .footer-link ul li + li{ margin-left: 27px; }
+#footer .footer-link ul li a{ font-size: 13px; color: #999999 }
+#footer .footer-link ul li a strong{ color: #000000; }
+#footer .footer-info{ background: #e3e3e3; padding: 18px 0; }
+#footer .footer-info .container{ display: flex; align-items: center; }
+#footer .footer-info .logo{ flex: none;width: 169px; height: 38px; background: url('../img/common/footer_logo.png') no-repeat center; background-size: 100%; text-indent: -9999px; margin-right: 52px; }
+#footer .footer-info p{ font-size: 13px; color: #999999; line-height: 1.85; }
+
+
+/*-------------------------------------------------------------------
+    @서브공통
+-------------------------------------------------------------------*/
+/* 서브 비쥬얼 */
+.sub-visual .sub-tit{ font-size: 32px; font-weight: 700; color: #000000; text-align: center; padding: 36px 0 35px; }
+.sub-visual .location-wrap{ position: absolute; right: 40px; bottom: 14px; display: flex; align-items: center; }
+.sub-visual .location-wrap li + li{ margin-left: 14px; padding-left: 16px; position: relative; }
+.sub-visual .location-wrap li + li::before{ content: ""; width: 2px; height: 2px; position: absolute; border-radius: 50%; background: #999999; left: 0; top: 11px; }
+.sub-visual .location-wrap li a{ font-size: 14px; color: #333333; }
+.sub-visual .location-wrap li:last-child a{ color: #3e7daf; border-bottom: 1px solid #3e7daf; }
+.sub-visual .location-wrap li.home{ width: 24px; height: 24px; text-indent: -9999px; background: url('../img/icon/ico_home.png') no-repeat center; background-size: 15px; }
+
+.sub-visual.bg01{ background: url('../img/common/bg_sub_visual.png') no-repeat left center; background-size: cover; }
+
+/* 서브 */
+.sub{ padding-top: 40px; padding-bottom: 50px; min-height: calc(100vh - 374px); }
+
+/* box */
+.box-wrap{ background-color: #f5f6f9; text-align: center; }
+.box-wrap > *{ margin: 0 auto; }
+.box-wrap.complete .txt1{ font-size: 26px; font-weight: 700; }
+.box-wrap.complete .txt2{ font-size: 18px; }
+.box-wrap.complete .txt2 strong{ font-weight: 400; }
+.box-wrap.complete .btn{ padding: 0 32px; }
+.box-wrap > .btn-wrap{ background: #e8ecf1; padding: 30px 15px; display: flex; align-items: center; }
+.box-wrap > .btn-wrap .btn{ margin: 0 25px; flex: 1 0; border-radius: 5px; }
+.box-wrap.complete > .btn-wrap{ background: none; padding: 0; justify-content: center; }
+.box-wrap.complete > .btn-wrap .btn{ flex: none; margin: 0 3px; }
+ 
+/*-------------------------------------------------------------------
+    @시스템
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------
+    @태블릿
+-------------------------------------------------------------------*/
+@media all and (max-width: 1280px) {
+    #header #utilBar,
+    #header .gnb-wrap .total-search,
+    #header .gnb-wrap #gnb{ display: none; }
+    #header .gnb-wrap .btn-menu, 
+    #header .gnb-wrap .container > .btn-search, 
+    #header .gnb-wrap #gnb .gnb-head, 
+    #header .gnb-wrap #gnb .user-menu{ display: block; }
+    #header .gnb-wrap .logo{ float: none; margin: 0 auto; width: 181px; height: 90px; padding: 10px 0; }
+}
+
+/*-------------------------------------------------------------------
+    @모바일
+-------------------------------------------------------------------*/
+@media all and (max-width: 640px) {}
