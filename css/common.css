@@ -157,7 +157,7 @@
 
     /* header */
     #header .gnb-wrap .btn-menu{ width: 17px; height: 15px; }
-    #header .gnb-wrap .logo{ width: 90px; height: 45px; padding: 5px 0; }
+    #header .gnb-wrap .logo{ width: 120px; height: 60px; padding: 7px 0; }
     #header .gnb-wrap .container > .btn-search{ width: 20px; height: 20px; right: 20px; }
     #header .gnb-wrap .total-search{ padding: 14px 20px 21px; }
     #header .gnb-wrap .total-search input{ height: 41px; border-width: 1px; font-size: 15px; }
