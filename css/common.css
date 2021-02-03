@@ -158,10 +158,10 @@
     /* header */
     #header .gnb-wrap .btn-menu{ width: 17px; height: 15px; }
     #header .gnb-wrap .logo{ width: 90px; height: 45px; padding: 5px 0; }
-    #header .gnb-wrap .container > .btn-search{ width: 20px; height: 19px; right: 20px; }
+    #header .gnb-wrap .container > .btn-search{ width: 20px; height: 20px; right: 20px; }
     #header .gnb-wrap .total-search{ padding: 14px 20px 21px; }
     #header .gnb-wrap .total-search input{ height: 41px; border-width: 1px; font-size: 15px; }
-    #header .gnb-wrap .total-search .btn-search{ right: 20px; top: 40px; }
+    #header .gnb-wrap .total-search .btn-search{ right: 20px; top: 44px; }
     #header .gnb-wrap #gnb{ width: calc(100% - 43px); }
     #header .gnb-wrap #gnb .gnb-head{ padding: 10px 20px; }
     #header .gnb-wrap #gnb .gnb-head .btn-sign{ font-size: 12px; height: 24px; line-height: 24px; border-radius: 12px; padding: 0 20px; }

@@ -307,6 +307,6 @@ label input[type='checkbox']:checked + span{ background: url('../img/icon/ico_ch
 -------------------------------------------------------------------*/
 @media all and (max-width: 640px) {
     /* 버튼 */
-    .btn-close{ width: 19px;
-        height: 19px; }
+    .btn-search{ width: 20px; height: 20px; }
+    .btn-close{ width: 19px; height: 19px; }
 }
