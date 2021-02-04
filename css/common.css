@@ -121,6 +121,7 @@
 -------------------------------------------------------------------*/
 @media all and (max-width: 1280px) {
     /* 컨텐츠 영역 */
+    .tit-wrap.v2{ border-width: 2px; }
     .tit-wrap.v2 .tit{ font-size: 32px; padding-left: 50px; }
     .tit-wrap.v2 .tit .deco{ width: 27px; top: 12px; }
     .tit-wrap.v2 .tit .cnt{ margin-left: 20px; width: 37px; line-height: 37px; height: 37px; font-size: 22px; }
@@ -178,6 +179,13 @@
     /* container */
     .container{ padding-left: 20px; padding-right: 20px; }
 
+    /* 컨텐츠 영역 */
+    .tit-wrap.v2{ border-width: 1px; padding-bottom: 7px; }
+    .tit-wrap.v2 .tit{ font-size: 16px; padding-left: 25px; }
+    .tit-wrap.v2 .tit .deco{ width: 13px; top: 6px; }
+    .tit-wrap.v2 .tit .cnt{ margin-left: 10px; width: 18px; line-height: 18px; height: 18px; font-size: 11px; }
+    .tit-wrap.v2 .btn-more{ font-size: 14px; }
+
     /* header */
     #header .gnb-wrap .btn-menu{ width: 17px; height: 15px; }
     #header .gnb-wrap .logo{ width: 120px; height: 60px; padding: 7px 0; }
@@ -207,4 +215,7 @@
     .sub-visual .location-wrap li + li::before{ width: 2px; height: 2px; top: 12px; }
     .sub-visual .location-wrap li a{ font-size: 12px; }
     .sub-visual .location-wrap li.home{ width: 14px; height: 14px; background-size: 14px; }
+
+    /* 서브 */
+    .sub{ padding-top: 22px; padding-bottom: 38px; min-height: calc(100vh - 331px); }
 }

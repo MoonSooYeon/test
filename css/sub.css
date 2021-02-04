@@ -135,4 +135,25 @@
 /*-------------------------------------------------------------------
     @모바일
 -------------------------------------------------------------------*/
-@media all and (max-width: 640px) {}
+@media all and (max-width: 640px) {
+    /*-------------------------------------------------------------------
+        @공통화면
+    -------------------------------------------------------------------*/
+    /* 상세검색 */
+    .total-search-box{ padding: 20px 15px; }
+    .total-search-box .option-wrap{ padding-bottom: 15px; }
+    .total-search-box .option-wrap .option-item + .option-item{ margin-top: 17px; }
+    .total-search-box .option-wrap .option-item .tit{ font-size: 12px; }
+    .total-search-box .option-wrap .option-item .inp-wrap{ padding-top: 7px; }
+    .total-search-box .option-wrap .option-item .inp-wrap.target .check-item{ width: calc(50% - 8px); margin-right: 15px; }
+    .total-search-box .total-search .search-wrap input{ height: 39px; padding: 0 39px 0 10px; font-size: 13px; }
+    .total-search-box .total-search .search-wrap .btn-ic{ right: 10px; top: 10px; }
+    .total-search-box .total-search .btn-option-toggle{ margin-top: 17px; height: 34px; line-height: 34px; font-size: 13px; padding: 0 37px; }
+    .total-search-box .total-search .btn-option-toggle i{ right: 15px; width: 9px; height: 6px; }
+    
+    /*-------------------------------------------------------------------
+        @메뉴명
+    -------------------------------------------------------------------*/
+    /* 통합검색 > 검색결과 */
+    .search-result h3{ font-size: 14px; }
+}
