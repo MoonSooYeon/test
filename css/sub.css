@@ -155,5 +155,6 @@
         @메뉴명
     -------------------------------------------------------------------*/
     /* 통합검색 > 검색결과 */
+    .search-result{ border-width: 1px; padding-bottom: 6px; }
     .search-result h3{ font-size: 14px; }
 }

@@ -119,6 +119,16 @@ $(document).ready(function(){
             $(this).toggleClass('on');
             $(this).siblings('li').removeClass('on');
         });
+
+        $('.tbl-wrap.scroll-wrap').scroll(function(){
+            var scrollValue = $(this).scrollLeft(); 
+
+            if(scrollValue > 0){
+                $(this).addClass('on');
+            } else if(scrollValue == 0){
+                $(this).removeClass('on');
+            }
+        });
     }
 
     $(window).resize(function () {

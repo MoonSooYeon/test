@@ -193,7 +193,7 @@
 .tbl-wrap.v2 table td .btn{ padding: 0 22px; }
 .tbl-wrap.v2 .txt-guide{ font-size: 14px; line-height: 2.15; color: #999999; margin-left: 30px; }
 
-.tbl-wrap.scroll-wrap{ overflow-x: auto; }
+.tbl-wrap.scroll-wrap{ overflow-x: auto; position: relative; }
 
 /* input */
 .inp-wrap{ display: flex; align-items: center; flex-wrap: wrap; }
@@ -335,6 +335,9 @@ label input[type='checkbox']:checked + span{ background: url('../img/icon/ico_ch
     .tbl-wrap.v1 table th,
     .tbl-wrap.v1 table td{ font-size: 26px; padding: 18px 0; }
 
+    .tbl-wrap.scroll-wrap::before{ content: ""; position: absolute; width: 164px; height: 164px; background: url('../img/icon/ico_table_scroll.png') no-repeat center; background-size: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .tbl-wrap.scroll-wrap.on::before{ display: none; }
+
     /* input */
     input[type='text'],
     input[type='password'],
@@ -350,6 +353,7 @@ label input[type='checkbox']:checked + span{ background: url('../img/icon/ico_ch
     .inp-wrap.date .inp-item{ width: calc(50% - 12px); }
     .inp-wrap.date > span{ width: 24px; font-size: 24px; }
     .inp-wrap.date .btn-date-reset{ margin-left: 0; margin-top: 17px; }
+    .inp-wrap.date .check-item{ margin-top:20px; }
 
     /*-------------------------------------------------------------------
         @Only (Display 스타일은 다양하므로 숨길경우만 사용)
@@ -484,6 +488,8 @@ label input[type='checkbox']:checked + span{ background: url('../img/icon/ico_ch
     .tbl-wrap.v1 table th,
     .tbl-wrap.v1 table td{ font-size: 13px; padding: 9px 0; }
 
+    .tbl-wrap.scroll-wrap::before{ width: 82px; height: 82px; }
+
     /* input */
     input[type='text'],
     input[type='password'],
@@ -499,6 +505,7 @@ label input[type='checkbox']:checked + span{ background: url('../img/icon/ico_ch
     .inp-wrap.date .inp-item{ width: calc(50% - 6px); }
     .inp-wrap.date > span{ width: 12px; font-size: 12px; }
     .inp-wrap.date .btn-date-reset{ margin-top: 8px; }
+    .inp-wrap.date .check-item{ margin-top: 10px; }
 
     /* 버튼 */
     .btn-lg{ line-height: 29px !important; height: 29px !important; font-size: 13px !important; }
