@@ -23,7 +23,7 @@
 .tit-wrap.v1 .tit{ font-size: 26px; padding-left: 32px; }
 .tit-wrap.v1 .tit .deco{ top: 10px; }
 
-.tit-wrap.v2{ border-bottom: 1px solid #333333; padding-bottom: 15px; }
+.tit-wrap.v2{ border-bottom: 1px solid #333333; padding-bottom: 15px; flex-wrap: wrap; }
 .tit-wrap.v2 .tit{ font-size: 20px; padding-left: 32px; }
 .tit-wrap.v2 .tit .deco{ top: 7px; width: 17px; }
 .tit-wrap.v2 .tit .cnt{ display: inline-block; width: 22px; line-height: 22px; height: 22px; border-radius: 50%; background: #f3cac1; color: #ffffff; font-size: 13px; font-weight: 700; text-align: center; margin-left: 8px; vertical-align: 1px; }
@@ -136,7 +136,7 @@
 .popup{ display: none; position: fixed; z-index: 11; }
 .popup.on{ display: block; }
 
-.popup.v1{ top: 125px; left: 50%; max-height: calc(100vh - 250px); transform: translateX(-50%); max-width: 716px; width: calc(100% - 80px); background: #ffffff; border: 3px solid #337ec8; padding-left: 20px; padding-right: 20px; }
+.popup.v1{ top: 125px; left: 50%; max-height: calc(100% - 250px); transform: translateX(-50%); max-width: 716px; width: calc(100% - 80px); background: #ffffff; border: 3px solid #337ec8; padding-left: 20px; padding-right: 20px; }
 .popup.v1 .pop-head{ border-bottom: 1px solid #dddddd; position: relative; padding: 20px 0;                }
 .popup.v1 .pop-head .tit{ font-size: 26px; font-weight: 700; }
 .popup.v1 .pop-head .btn-pop-close{ position: absolute; top: 10px; right: 0; }
@@ -161,6 +161,7 @@
     .tit-wrap.v2 .tit .deco{ width: 27px; top: 12px; }
     .tit-wrap.v2 .tit .cnt{ margin-left: 20px; width: 37px; line-height: 37px; height: 37px; font-size: 22px; }
     .tit-wrap.v2 .btn-more{ font-size: 28px; }
+    .tit-wrap.v2 .txt{ width: 100%; font-size: 24px; margin-top: 12px; }
 
     .tit-wrap.v3 .tit{ font-size: 30px; padding-left: 45px; }
     .tit-wrap.v3 .tit .deco{ top: 8px; width: 28px; }
@@ -268,6 +269,7 @@
     .tit-wrap.v2 .tit .deco{ width: 13px; top: 6px; }
     .tit-wrap.v2 .tit .cnt{ margin-left: 10px; width: 18px; line-height: 18px; height: 18px; font-size: 11px; }
     .tit-wrap.v2 .btn-more{ font-size: 14px; }
+    .tit-wrap.v2 .txt{ font-size: 12px; margin-top: 6px; }
 
     .tit-wrap.v3 .tit{ font-size: 15px; padding-left: 22px; }
     .tit-wrap.v3 .tit .deco{ top: 4px; width: 14px; }
